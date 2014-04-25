@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ExceptionReporter</id>
+    <version>2.1.2</version>
+    <title>Exception Reporter</title>
+    <authors>Peter van der Woude (pandawood)</authors>
+    <owners>Peter van der Woude (pandawood)</owners>
+    <licenseUrl>http://exceptionreporter.codeplex.com/license</licenseUrl>
+    <projectUrl>http://exceptionreporter.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ExceptionReporter is a .NET component that shows a dialog with detailed information on an Exception and the application/system running it. It allows the application user to copy, save and/or email a report of the incident - including a screenshot that is taken automatically (if configured)</description>
+    <summary>ExceptionReporter is a .NET WinForm component that shows a dialog with detailed information on a given Exception</summary>
+    <releaseNotes>Added ability to attach files to the (SMTP or MAPI) email
+Fixed issue when using MAPI email where warning/error message about email client installed appeared when launching Outlook</releaseNotes>
+    <copyright />
+    <language>en-AU</language>
+    <tags>exception reporter report screenshot stacktrace crash</tags>
+  </metadata>
+</package>

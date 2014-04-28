@@ -360,7 +360,7 @@ namespace NoPeekCloud
                             System.IO.File.Delete(deleteFile);
                         }
 
-                        foreach (var directory in System.IO.Directory.GetDirectories(fl.Target))
+                        foreach (var directory in System.IO.Directory.GetDirectories(fl.Target, "*", SearchOption.AllDirectories))
                         {
                             if (System.IO.Directory.GetFiles(directory).Length == 0 && System.IO.Directory.GetDirectories(directory).Length == 0)
                             {

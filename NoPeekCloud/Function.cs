@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace NoPeekCloud
 {
@@ -43,6 +44,38 @@ namespace NoPeekCloud
 
             TimeSpan timeSpan = new TimeSpan(0, 0, Convert.ToInt32(stopWatchAvg.Average()));
             return string.Format("{0:0}:{1:00}:{2:00}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds);
+        }
+    }
+
+    class FileHandler
+    {
+        public static void DeleteFile(string file)
+        {
+            try
+            {
+                if (!File.Exists(file)) throw new FileNotFoundException(string.Format("Can not delete '{0}', file does not exist.", file));
+
+                File.SetAttributes(file, FileAttributes.Normal);
+                File.Delete(file);
+            }
+            catch (Exception exp)
+            {
+                MsgManager.Show(exp.Message, "File delete error", System.Windows.Forms.MessageBoxIcon.Error);
+            }
+        }
+
+        public static void DeleteFolder(string folder)
+        {
+            try
+            {
+                if (!Directory.Exists(folder)) throw new FileNotFoundException(string.Format("Can not delete '{0}', folder does not exist.", folder));
+
+                Directory.Delete(folder, false);
+            }
+            catch (Exception exp)
+            {
+                MsgManager.Show(exp.Message, "Folder delete error", System.Windows.Forms.MessageBoxIcon.Error);
+            }
         }
     }
 }

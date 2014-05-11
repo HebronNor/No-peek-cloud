@@ -16,7 +16,7 @@ namespace NoPeekCloud
             if (System.IO.File.Exists(fd.CompressedName))
             {
                 Debug.Print("Deleting existing compressed file: {0}", fd.CompressedName);
-                System.IO.File.Delete(fd.CompressedName);
+                FileHandler.DeleteFile(fd.CompressedName);
             }
 
             string password = Program.MainForm.config.PasswordText;

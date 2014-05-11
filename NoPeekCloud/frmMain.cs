@@ -34,6 +34,9 @@ namespace NoPeekCloud
 
         public frmMain(string[] args)
         {
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+            Application.ThreadException += Application_ThreadException;
+
             InitializeComponent();
 
             TextWriterTraceListener debugLog = new TextWriterTraceListener(currentFolder + string.Format("\\Debug_{0}.log", DateTime.Now.ToString("yy-MM-dd_HH-mm-ss")));
@@ -57,8 +60,7 @@ namespace NoPeekCloud
             ExtractWorker.ProgressChanged += Worker_ProgressChanged;
             ExtractWorker.RunWorkerCompleted += ExtractWorker_RunWorkerCompleted;
 
-            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-            Application.ThreadException += Application_ThreadException;
+            timer2.Start();
 
             foreach (string arg in args)
             {
@@ -357,7 +359,7 @@ namespace NoPeekCloud
                             Debug.Print("Compressed file {0} not in use, delete.", deleteFile);
                             logWriter.FileLog(System.IO.Path.GetDirectoryName(deleteFile), System.IO.Path.GetFileName(deleteFile), "Compressed file not in use, delete.", LogColor.Red);
 
-                            System.IO.File.Delete(deleteFile);
+                            FileHandler.DeleteFile(deleteFile);
                         }
 
                         foreach (var directory in System.IO.Directory.GetDirectories(fl.Target, "*", SearchOption.AllDirectories))
@@ -366,7 +368,7 @@ namespace NoPeekCloud
                             {
                                 Debug.Print("Deleting empty folder {0}.", directory);
                                 logWriter.FileLog(directory, string.Empty, "Deleting empty folder", LogColor.Red);
-                                System.IO.Directory.Delete(directory, false);
+                                FileHandler.DeleteFolder(directory);
                             }
                         }
 

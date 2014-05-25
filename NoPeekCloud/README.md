@@ -12,10 +12,27 @@ Source folders can be scanned periodically or every time a change is detected. [
 &nbsp;&nbsp;
 <img src="https://y1mjva.bn1301.livefilestore.com/y2per0cHc_bCFePDcwgyJXsFUAhMIId2PZvt1cb3m8friwaijhDQQUmLcjL3DIU_cwjxRcgOleZOzRchWUafXKoXFSw5Ebg8vHBlcTj4RtgKEI/NoPeekClound_Screenshot3.png?psid=1" width="400">
 
-## Requirements
+## Installation
+No installation is required; simply unpack the release binary files (`NoPeekCloud_vX.X.X.zip`) to a folder of your choosing.
+
+### Requirements
 * 7-Zip
 * Windows 7
 * .NET Framework 4.5
+
+## Upgrade
+To upgrade your version of NoPeekCloud; unpack the release binary files (`NoPeekCloud_vX.X.X.zip`) to the folder containing your current version. Some files will be overwritten, but your library and configuration will not be affected.
+Make sure NoPeekCloud is not running during the upgrade.
+
+## File library
+Your file library is stored in `FileDetails.xml`, this file is not affected when upgrading to a new version.
+
+### File library backups
+Every time you synchronize a backup of your library is stored as `FileDetails.bak`.
+
+#### Restore backup
+First make sure NoPeekCloud is not running, delete your current `FileDetails.xml` file. Then rename `FileDetails.bak` to `FileDetails.xml`
+When starting NoPeekCloud your library will now have been restored to your backup.
 
 ## Command-line arguments
 * Open application minimized: `NoPeekCloud.exe /Min`

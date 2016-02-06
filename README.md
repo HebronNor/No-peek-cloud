@@ -6,11 +6,11 @@ No Peek Cloud lets you select folder on your local computer that you want to enc
 Source folders can be scanned periodically or every time a change is detected. [7-Zip](http://www.7-zip.org/) is used for compression and encryption.
 
 ## Screenshots
-<img src="https://y1mjva.bn1303.livefilestore.com/y2pllgFU0igL_4TdVzfHj9C-bgkNrEdFvhnw2qP_JHuT9m6rrwIKnbQmfgj5ozRPDUylaUvgnMYydBDm-tiHWfjHjTdSaznW6dSJ14wDbbJUzU/NoPeekClound_Screenshot2.png?psid=1" width="400">
+<img src="https://images.uctrl.net/dump/github/nopeekcloud/nopeekclound_screenshot1.png" width="400">
 &nbsp;&nbsp;
-<img src="https://y1mjva.bn1302.livefilestore.com/y2plAJOlltSNKdtL7SZ8m0ddpn24eh8Gvqe_76-szNAuS-zPVPi1ALOGyb59IhtH_uWBLoI5bvbuRa91QeTJUy-fXzK51NyJdxBW7eSfrL78Cg/NoPeekClound_Screenshot1.png?psid=1" width="400">
+<img src="https://images.uctrl.net/dump/github/nopeekcloud/nopeekclound_screenshot2.png" width="400">
 &nbsp;&nbsp;
-<img src="https://y1mjva.bn1301.livefilestore.com/y2per0cHc_bCFePDcwgyJXsFUAhMIId2PZvt1cb3m8friwaijhDQQUmLcjL3DIU_cwjxRcgOleZOzRchWUafXKoXFSw5Ebg8vHBlcTj4RtgKEI/NoPeekClound_Screenshot3.png?psid=1" width="400">
+<img src="https://images.uctrl.net/dump/github/nopeekcloud/nopeekclound_screenshot3.png" width="400">
 
 ## Installation
 No installation is required; simply unpack the release binary files (`NoPeekCloud_vX.X.X.zip`) to a folder of your choosing.

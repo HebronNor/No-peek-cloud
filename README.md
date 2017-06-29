@@ -6,9 +6,9 @@ No Peek Cloud lets you select folder on your local computer that you want to enc
 Source folders can be scanned periodically or every time a change is detected. [7-Zip](http://www.7-zip.org/) is used for compression and encryption.
 
 ## Screenshots
-![Screenshot](http://i.imgur.com/vaqGSEQl.png)
-![Screenshot](http://i.imgur.com/iAuYrxbl.png)
-![Screenshot](http://i.imgur.com/EvZCDIvl.png)
+![Screenshot](/media/NoPeekClound_Screenshot1.png)
+![Screenshot](/media/NoPeekClound_Screenshot2.png)
+![Screenshot](/media/NoPeekClound_Screenshot3.png)
 
 ## Installation
 No installation is required; simply unpack the release binary files (`NoPeekCloud_vX.X.X.zip`) to a folder of your choosing.
